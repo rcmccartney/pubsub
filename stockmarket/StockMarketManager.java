@@ -1,4 +1,5 @@
 package pubsub.stockmarket;
+
 //******************************************************************************
 //File:    StockMarketManager.java
 //Package: None

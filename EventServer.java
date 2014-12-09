@@ -1,4 +1,5 @@
 package pubsub;
+
 //******************************************************************************
 //File:    EventServer.java
 //Package: None
@@ -7,6 +8,8 @@ package pubsub;
 import java.net.InetAddress;
 import java.rmi.Naming;
 import java.rmi.RemoteException;
+
+import pubsub.EventManager;
 
 /**
  * This class parses command-line input in order to set up the server in the client-server architecture.

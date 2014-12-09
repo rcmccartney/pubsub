@@ -1,4 +1,5 @@
 package pubsub;
+
 //******************************************************************************
 //File:    PubSubClient.java
 //Package: None
@@ -11,6 +12,7 @@ import java.net.InetAddress;
 import java.rmi.Naming;
 import java.rmi.RemoteException;
 
+import pubsub.PubSubAgent;
 import pubsub.interfaces.EventManInterface;
 /**
  * This class parses command-line input in order to set up the client in the client-server architecture.

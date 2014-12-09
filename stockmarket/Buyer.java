@@ -1,4 +1,5 @@
 package pubsub.stockmarket;
+
 //******************************************************************************
 //File:    Buyer.java
 //Package: None

@@ -1,0 +1,32 @@
+To run the PubSub program first extract source files then open a shell and type:
+
+$ rmiregistry [port] &    //port is optional
+$ java EventServer [-host <hostName>] [-p <portnumber>]  //optional command-line arguments
+
+The port number must match what you used for the rmiregistry.  Then, to connect with a PubSubAgent, run
+
+$ java PubSubClient [-l] [-host <hostName>] [-p <portnumber>]
+
+The hostName must match what the server is running on.  If you are using two terminals on the same machine,
+this argument is not needed.  The portnumber must match what the server and rmiregistry used.
+Use -l to load a previously saved Client (to show asynchronousity)
+
+
+Example run:
+(On buddy.cs.rit.edu)
+$ rmiregistry &
+$ java EventServer
+
+(On a different machine)
+$ java PubSubClient -host buddy.cs.rit.edu
+
+To run the Stock Exchange the commands are similar but follow the following example:
+
+Example run:
+(On buddy.cs.rit.edu)
+$ rmiregistry &
+$ java StockMarketManager
+
+(On a different machine)
+$ java Seller -host buddy.cs.rit.edu
+$ java Buyer -host buddy.cs.rit.edu
